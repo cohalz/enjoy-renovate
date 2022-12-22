@@ -6,7 +6,7 @@
   regexManagers: [
     {
       fileMatch: ['^\\.ecspresso-version$'],
-      matchStrings: ['(?<currentValue>.*?)'],
+      matchStrings: ['(?<currentValue>\\d+\\.\\d+\\.\\d+)'],
       datasourceTemplate: 'github-releases',
       depNameTemplate: 'kayac/ecspresso',
       extractVersionTemplate: '^v(?<version>.*)$'
